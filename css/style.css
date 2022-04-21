@@ -1,21 +1,63 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Shrikhand", cursive;
+* {
+  box-sizing: border-box;
 }
 
-p {
+* {
   font-family: "Roboto", sans-serif;
 }
 
 header {
   display: flex;
   justify-content: center;
-  padding-top: 15px;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 10px;
 }
 
-* {
-  box-sizing: border-box;
+.Localisation {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  color: #353535;
+  background-color: #eaeaea;
+}
+.Localisation i {
+  padding-right: 15px;
+}
+.Localisation p {
+  font-weight: bold;
+}
+
+.Explore {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6;
+}
+.Explore h1 {
+  font-size: x-large;
+  padding-top: 20px;
+}
+.Explore p {
+  color: #353535;
+  margin-top: -5px;
+}
+.Explore h1, .Explore p {
+  text-align: center;
+  margin-left: 12%;
+  margin-right: 12%;
+}
+.Explore .Btn-Explore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  width: 200px;
+  height: 50px;
+  color: white;
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
+  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

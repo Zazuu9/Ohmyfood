@@ -1,11 +1,13 @@
-@import "./Pages/Font.scss";
-@import "./Layout/Header.scss";
-@import "./Layout/Footer.scss";
-
 *{
     box-sizing: border-box;
 }
 
-$color-primary: #9356DC;
-$color-secondary: #FF79DA;
-$color-tertiary: #99E2D0;
+@import "./Utils/mixins.scss";
+@import "./Composants/Color.scss";
+@import "./Pages/Font.scss";
+@import "./Layout/Header.scss";
+@import "./Layout/Body.scss";
+@import "./Layout/Footer.scss";
+
+
+
