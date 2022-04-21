@@ -34,6 +34,7 @@ header {
   display: flex;
   flex-direction: column;
   background-color: #f6f6f6;
+  padding-bottom: 50px;
 }
 .Explore h1 {
   font-size: x-large;
@@ -53,11 +54,80 @@ header {
   justify-content: center;
   align-items: center;
   border-radius: 25px;
-  width: 200px;
-  height: 50px;
+  width: 210px;
+  height: 51px;
   color: white;
   background: linear-gradient(to top left, #9356DC, #FF79DA);
   margin: auto;
+}
+
+.Fonctionnement {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+}
+
+.CaseFonctionnement {
+  display: flex;
+  align-items: center;
+  background: #f6f6f6;
+  width: 90%;
+  height: 75px;
+  border-radius: 15px;
+  box-shadow: 0px 12px 10px -5px #eaeaea;
+  margin-bottom: 25px;
+  margin-left: 2%;
+}
+.CaseFonctionnement .TexteCase {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  width: 100%;
+}
+.CaseFonctionnement .TexteCase h3 {
+  margin-left: -10px;
+  text-align: center;
+  background-color: #9356DC;
+  border-radius: 20px;
+  width: 23px;
+  height: 22px;
+  color: white;
+}
+.CaseFonctionnement .TexteCase i {
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.CaseFonctionnement1 {
+  display: flex;
+  align-items: center;
+  background-color: rgba(147, 86, 220, 0.15);
+  width: 90%;
+  height: 75px;
+  border-radius: 15px;
+  box-shadow: 0px 12px 10px -5px #eaeaea;
+  margin-bottom: 25px;
+  margin-left: 2%;
+}
+.CaseFonctionnement1 .TexteCase {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  width: 100%;
+}
+.CaseFonctionnement1 .TexteCase h3 {
+  margin-left: -10px;
+  text-align: center;
+  background-color: #9356DC;
+  border-radius: 20px;
+  width: 23px;
+  height: 22px;
+  color: white;
+}
+.CaseFonctionnement1 .TexteCase i {
+  padding-left: 7%;
+  padding-right: 7%;
+  color: #9356DC;
 }
 
 /*# sourceMappingURL=style.css.map */
