@@ -1,0 +1,31 @@
+.Footer {
+    background-color: $color-grey-text;
+    padding-bottom: 40px;
+    ul {
+        li {
+            list-style: none;
+            h2 {
+                font-family: 'Shrikhand', cursive;
+                font-weight: normal;
+                padding-bottom: 10px
+            }
+            a{
+                @include FlexFlexStartCenter;
+                color: white;
+                text-decoration: none;
+                margin-bottom: -30px;
+            }
+            i {
+                margin-right: 10px;
+            }
+            .Proposition {
+                padding-left: 7px;
+            }
+            .MentionsContact {
+                h4{
+                    font-weight: lighter;
+                }
+            }
+        }
+    }  
+}

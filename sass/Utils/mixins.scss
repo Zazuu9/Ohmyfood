@@ -22,3 +22,9 @@
     justify-content: space-between;
     align-items: center;
 }
+
+@mixin FlexFlexStartCenter {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
