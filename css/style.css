@@ -66,8 +66,7 @@ header {
   flex-direction: column;
   margin-left: 5%;
 }
-
-.CaseFonctionnement {
+.Fonctionnement .CaseFonctionnement {
   display: flex;
   align-items: center;
   background: #f6f6f6;
@@ -78,13 +77,13 @@ header {
   margin-bottom: 25px;
   margin-left: 2%;
 }
-.CaseFonctionnement .TexteCase {
+.Fonctionnement .CaseFonctionnement .TexteCase {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
   width: 100%;
 }
-.CaseFonctionnement .TexteCase h3 {
+.Fonctionnement .CaseFonctionnement .TexteCase h3 {
   margin-left: -10px;
   text-align: center;
   background-color: #9356DC;
@@ -93,12 +92,11 @@ header {
   height: 22px;
   color: white;
 }
-.CaseFonctionnement .TexteCase i {
+.Fonctionnement .CaseFonctionnement .TexteCase i {
   padding-left: 7%;
   padding-right: 7%;
 }
-
-.CaseFonctionnement1 {
+.Fonctionnement .CaseFonctionnement1 {
   display: flex;
   align-items: center;
   background-color: rgba(147, 86, 220, 0.15);
@@ -109,13 +107,13 @@ header {
   margin-bottom: 25px;
   margin-left: 2%;
 }
-.CaseFonctionnement1 .TexteCase {
+.Fonctionnement .CaseFonctionnement1 .TexteCase {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
   width: 100%;
 }
-.CaseFonctionnement1 .TexteCase h3 {
+.Fonctionnement .CaseFonctionnement1 .TexteCase h3 {
   margin-left: -10px;
   text-align: center;
   background-color: #9356DC;
@@ -124,10 +122,67 @@ header {
   height: 22px;
   color: white;
 }
-.CaseFonctionnement1 .TexteCase i {
+.Fonctionnement .CaseFonctionnement1 .TexteCase i {
   padding-left: 7%;
   padding-right: 7%;
   color: #9356DC;
+}
+
+.Restaurants {
+  background-color: #f6f6f6;
+}
+.Restaurants h1 {
+  padding-top: 50px;
+  padding-left: 5%;
+}
+
+.BlocRestaurants {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.CaseRestaurants {
+  border-radius: 20px 20px 20px 20px;
+  height: 260px;
+  width: 90%;
+  background-color: white;
+  box-shadow: 0px 12px 10px -5px #eaeaea;
+  margin-bottom: 20px;
+}
+.CaseRestaurants .Img {
+  border-radius: 20px 20px 0px 0px;
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+}
+.CaseRestaurants .DescRestaurants {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.CaseRestaurants .DescRestaurants .TestDesc {
+  padding-left: 15px;
+}
+.CaseRestaurants .DescRestaurants .TestDesc h3 {
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+.CaseRestaurants .DescRestaurants .HeartIcon {
+  margin-right: 30px;
+  padding-bottom: 10px;
+}
+.CaseRestaurants .DescRestaurants .HeartIcon .Hover {
+  display: none;
+}
+.CaseRestaurants .DescRestaurants .HeartIcon:hover .Normal {
+  display: none;
+}
+.CaseRestaurants .DescRestaurants .HeartIcon:hover .Hover {
+  display: contents;
+  color: #9356DC;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
