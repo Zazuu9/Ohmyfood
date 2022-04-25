@@ -15,6 +15,9 @@ header {
   padding-top: 25px;
   padding-bottom: 10px;
 }
+header img {
+  width: 160px;
+}
 
 .Localisation {
   display: flex;
@@ -185,19 +188,19 @@ header {
   cursor: pointer;
 }
 
-.Footer {
+footer {
   background-color: #353535;
   padding-bottom: 40px;
 }
-.Footer ul li {
+footer ul li {
   list-style: none;
 }
-.Footer ul li h2 {
+footer ul li h2 {
   font-family: "Shrikhand", cursive;
   font-weight: normal;
   padding-bottom: 10px;
 }
-.Footer ul li a {
+footer ul li a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -205,13 +208,13 @@ header {
   text-decoration: none;
   margin-bottom: -30px;
 }
-.Footer ul li i {
+footer ul li i {
   margin-right: 10px;
 }
-.Footer ul li .Proposition {
+footer ul li .Proposition {
   padding-left: 7px;
 }
-.Footer ul li .MentionsContact h4 {
+footer ul li .MentionsContact h4 {
   font-weight: lighter;
 }
 
