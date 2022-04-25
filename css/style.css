@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
@@ -186,6 +187,48 @@ header img {
   display: contents;
   color: #9356DC;
   cursor: pointer;
+}
+
+main img {
+  width: 100%;
+}
+main .BackgroundMenu {
+  background: crimson;
+  border-radius: 30px 30px 0 0;
+  height: auto;
+  margin-top: -70px;
+  position: sticky;
+  z-index: 2;
+}
+main .Menu {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+main .Menu h1 {
+  font-family: "Shrikhand", cursive;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 28px;
+  font-weight: normal;
+  margin-right: 5%;
+  padding-top: 40px;
+}
+main .Menu .Entrées .Case {
+  background-color: white;
+  border-radius: 15px;
+  height: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+main .Menu .Entrées .Case h4 {
+  padding-top: 15px;
+  margin-bottom: -5px;
+}
+main .Menu .Entrées .Case .Prix {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 footer {

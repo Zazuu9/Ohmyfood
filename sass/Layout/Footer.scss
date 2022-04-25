@@ -5,7 +5,7 @@ footer {
         li {
             list-style: none;
             h2 {
-                font-family: 'Shrikhand', cursive;
+                @include font-family;
                 font-weight: normal;
                 padding-bottom: 10px
             }

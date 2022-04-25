@@ -28,3 +28,7 @@
     justify-content: flex-start;
     align-items: center;
 }
+
+@mixin font-family {
+    font-family: 'Shrikhand', cursive;
+}
