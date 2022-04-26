@@ -23,6 +23,12 @@
     align-items: center;
 }
 
+@mixin FlexSpaceAroundCenter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 @mixin FlexFlexStartCenter {
     display: flex;
     justify-content: flex-start;
@@ -31,4 +37,14 @@
 
 @mixin font-family {
     font-family: 'Shrikhand', cursive;
+}
+
+@keyframes rotation {
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
 }
