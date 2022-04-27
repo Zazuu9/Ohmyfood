@@ -5,6 +5,26 @@
   box-sizing: border-box;
 }
 
+@keyframes SildeinRight {
+  0% {
+    opacity: 0;
+    transform: translateX(250px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes Sildeleft {
+  0% {
+    opacity: 0;
+    transform: translateX(250px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 @keyframes rotation {
   0% {
     transform: rotate(0);
@@ -18,13 +38,22 @@
 }
 
 header {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+header a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 25px;
-  padding-bottom: 10px;
+  text-decoration: none;
 }
-header img {
+header a i {
+  padding-bottom: 5px;
+  margin-left: -20%;
+  padding-right: 15%;
+  color: black;
+}
+header a img {
   width: 160px;
 }
 
@@ -235,6 +264,14 @@ main .Menu .Entrées .Case {
   height: 65px;
   padding-left: 10px;
   margin-bottom: 15px;
+  overflow: hidden;
+  min-width: 0;
+}
+main .Menu .Entrées .Case .Titre {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 70%;
 }
 main .Menu .Entrées .Case .Titre h4 {
   font-size: 16px;
@@ -252,15 +289,21 @@ main .Menu .Entrées .Case .Prix {
 }
 main .Menu .Entrées .Case .Check {
   display: none;
-  height: 65px;
-  border-radius: 0 15px 15px 0;
-  background-color: #99E2D0;
+}
+main .Menu .Entrées .Case:hover .Prix {
+  animation: Sildeleft 0.5s ease 0s 1 normal forwards;
 }
 main .Menu .Entrées .Case:hover .Check {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 65px;
+  width: 65px;
+  border-radius: 0 15px 15px 0;
+  background-color: #99E2D0;
+  color: white;
   rotate: 360deg;
+  animation: SildeinRight 0.5s ease 0s 1 normal forwards;
 }
 main .Menu .Entrées .Case:hover .Check i {
   animation: rotation 1s ease 0s 1 normal forwards;

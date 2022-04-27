@@ -1,8 +1,18 @@
 header {
-    @include FlexCenterCenter;
-    padding-top: 25px;
+    padding-top: 15px;
     padding-bottom: 10px;
-    img {
-        width: 160px;
+    a {
+        @include FlexCenterCenter;
+        text-decoration: none;
+        i {
+            padding-bottom: 5px;
+            margin-left: -20%;
+            padding-right: 15%;
+            color: black;
+        }
+        img {
+            width: 160px;
+        }
+
     }
 }

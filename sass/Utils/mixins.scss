@@ -39,6 +39,30 @@
     font-family: 'Shrikhand', cursive;
 }
 
+@keyframes SildeinRight {
+	0% {
+		opacity: 0;
+		transform: translateX(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes Sildeleft {
+	0% {
+		opacity: 0;
+		transform: translateX(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
 @keyframes rotation {
 	0% {
 		transform: rotate(0);
