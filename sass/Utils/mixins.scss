@@ -35,6 +35,18 @@
     align-items: center;
 }
 
+@mixin FlexFlexStartBaseline {
+	display: flex;
+	justify-content: flex-start;
+	align-items: baseline;
+}
+
+@mixin FlexRowWrap {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
 @mixin font-family {
     font-family: 'Shrikhand', cursive;
 }
@@ -72,3 +84,5 @@
 		transform: rotate(360deg);
 	}
 }
+
+$breakpoint-tablet: 768px;

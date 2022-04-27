@@ -57,5 +57,17 @@
     }
 }
 
+@media screen and (min-width: $breakpoint-tablet) {
+    .BlocRestaurants {
+        @include FlexRowWrap;
+        .CaseRestaurants {
+            width: 44%;
+            margin-right: 2%;
+            margin-left: 2%;
+            margin-bottom: 4%;
+        }
+    }
+}
+
 
 

@@ -109,6 +109,7 @@ header a img {
 }
 .Fonctionnement .CaseFonctionnement {
   display: flex;
+  justify-content: center;
   align-items: center;
   background: #f6f6f6;
   width: 90%;
@@ -139,6 +140,7 @@ header a img {
 }
 .Fonctionnement .CaseFonctionnement1 {
   display: flex;
+  justify-content: center;
   align-items: center;
   background-color: rgba(147, 86, 220, 0.15);
   width: 90%;
@@ -168,7 +170,45 @@ header a img {
   padding-right: 7%;
   color: #9356DC;
 }
+.Fonctionnement .CaseFonctionnement1 .TexteCase1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  width: 100%;
+}
+.Fonctionnement .CaseFonctionnement1 .TexteCase1 h3 {
+  margin-left: -10px;
+  text-align: center;
+  background-color: #9356DC;
+  border-radius: 20px;
+  width: 23px;
+  height: 22px;
+  color: white;
+}
+.Fonctionnement .CaseFonctionnement1 .TexteCase1 .IconFonctionnement {
+  padding-left: 7%;
+  padding-right: 7%;
+  color: #9356DC;
+}
 
+@media screen and (min-width: 768px) {
+  .Fonctionnement .Case {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .Fonctionnement .Case .CaseFonctionnement {
+    width: 45%;
+  }
+  .Fonctionnement .Case .CaseFonctionnement1 {
+    width: 70%;
+    margin-left: 15%;
+  }
+  .Fonctionnement .Case .CaseFonctionnement1 .TexteCase1 .IconFonctionnement {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
 .Restaurants {
   background-color: #f6f6f6;
 }
@@ -230,6 +270,19 @@ header a img {
   cursor: pointer;
 }
 
+@media screen and (min-width: 768px) {
+  .BlocRestaurants {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .BlocRestaurants .CaseRestaurants {
+    width: 44%;
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-bottom: 4%;
+  }
+}
 main img {
   width: 100%;
 }
