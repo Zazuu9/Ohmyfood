@@ -70,4 +70,16 @@
 }
 
 
+@media screen and (min-width: $breakpoint-desktop) {
+    .BlocRestaurants {
+        .CaseRestaurants {
+            height: auto;
+            .Img {
+                height: 300px;
+            }
+        }
+    }
+}
+
+
 
