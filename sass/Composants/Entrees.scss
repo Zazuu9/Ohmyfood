@@ -113,9 +113,6 @@ main {
 
 @media screen and (min-width: $breakpoint-tablet) {
     main {
-        .BackgroundMenu {
-        background: green;
-    }
         img {
             max-height: 400px;
             object-position: 30% 70%;
@@ -136,9 +133,6 @@ main {
 
 @media screen and (min-width: $breakpoint-desktop) {
     main {
-        .BackgroundMenu {
-            background: crimson;
-        }
         img {
             max-height: 500px
         }

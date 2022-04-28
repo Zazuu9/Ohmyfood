@@ -438,9 +438,6 @@ main .Menu .Btn-Commander h3 {
 }
 
 @media screen and (min-width: 768px) {
-  main .BackgroundMenu {
-    background: green;
-  }
   main img {
     max-height: 400px;
     object-position: 30% 70%;
@@ -454,9 +451,6 @@ main .Menu .Btn-Commander h3 {
   }
 }
 @media screen and (min-width: 992px) {
-  main .BackgroundMenu {
-    background: crimson;
-  }
   main img {
     max-height: 500px;
   }
