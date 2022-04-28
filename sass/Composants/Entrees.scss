@@ -1,6 +1,8 @@
 main {
     img {
+        object-fit: cover;
         width: 100%;
+        max-height: 400px;
     }
     .BackgroundMenu {
         background: $color-grey-background;
@@ -104,6 +106,65 @@ main {
                 background: linear-gradient(to top left, $color-primary, $color-secondary);
                 margin: auto;
                 margin-top: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+    main {
+        img {
+            max-height: 400px;
+            object-position: 30% 70%;
+        }
+        .Menu {
+            .Card {
+                h3 {
+                    margin-left: 2%;
+                }
+                .Plat {
+                    margin-left: 5%;
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+    main {
+        img {
+            max-height: 500px;
+        }
+        .Menu {
+            .Card {
+                display: flex;
+                flex-direction: column;
+                margin-right: 5%;
+                .ENTREES {
+                    display: flex;
+                    flex-wrap: wrap;
+                    .Plat {
+                        width: 45%;
+                        margin-bottom: 20px;
+                    }
+                }
+                .PLATS {
+                    display: flex;
+                    flex-wrap: wrap;
+                    .Plat {
+                        width: 45%;
+                        margin-bottom: 20px;
+                    }
+                }
+                .DESSERTS {
+                    display: flex;
+                    flex-wrap: wrap;
+                    .Plat {
+                        width: 45%;
+                        margin-bottom: 20px;
+                    }
+                }
             }
         }
     }

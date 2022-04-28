@@ -16,6 +16,7 @@
     background-color: white;
     box-shadow: 0px 12px 10px -5px $color-grey-dark-background;
     margin-bottom: 20px;
+    transition: 0.2s;
     .Img {
         border-radius: 20px 20px 0px 0px;
         height: 180px;
@@ -54,6 +55,10 @@
             
         }
         
+    }
+    &:hover {
+        transform: scale(1.015);
+        transition: 0.2s;
     }
 }
 

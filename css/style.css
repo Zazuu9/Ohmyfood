@@ -56,6 +56,12 @@ header a img {
   width: 160px;
 }
 
+@media screen and (min-width: 992px) {
+  header a i {
+    margin-left: -35%;
+    padding-right: 32%;
+  }
+}
 .Localisation {
   display: flex;
   justify-content: center;
@@ -253,6 +259,7 @@ header a img {
   background-color: white;
   box-shadow: 0px 12px 10px -5px #eaeaea;
   margin-bottom: 20px;
+  transition: 0.2s;
 }
 .CaseRestaurants .Img {
   border-radius: 20px 20px 0px 0px;
@@ -291,6 +298,10 @@ header a img {
   color: #9356DC;
   cursor: pointer;
 }
+.CaseRestaurants:hover {
+  transform: scale(1.015);
+  transition: 0.2s;
+}
 
 @media screen and (min-width: 768px) {
   .BlocRestaurants {
@@ -314,7 +325,9 @@ header a img {
   }
 }
 main img {
+  object-fit: cover;
   width: 100%;
+  max-height: 400px;
 }
 main .BackgroundMenu {
   background: #f6f6f6;
@@ -424,6 +437,53 @@ main .Menu .Btn-Commander h3 {
   margin-top: 50px;
 }
 
+@media screen and (min-width: 768px) {
+  main img {
+    max-height: 400px;
+    object-position: 30% 70%;
+  }
+  main .Menu .Card h3 {
+    margin-left: 2%;
+  }
+  main .Menu .Card .Plat {
+    margin-left: 5%;
+    width: 90%;
+  }
+}
+@media screen and (min-width: 992px) {
+  main img {
+    max-height: 500px;
+  }
+  main .Menu .Card {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+  }
+  main .Menu .Card .ENTREES {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main .Menu .Card .ENTREES .Plat {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+  main .Menu .Card .PLATS {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main .Menu .Card .PLATS .Plat {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+  main .Menu .Card .DESSERTS {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main .Menu .Card .DESSERTS .Plat {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+}
 footer {
   background-color: #353535;
   padding-bottom: 40px;

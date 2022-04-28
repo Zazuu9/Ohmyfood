@@ -16,3 +16,14 @@ header {
 
     }
 }
+
+@media screen and (min-width: $breakpoint-desktop) {
+    header {
+        a {
+            i {
+                margin-left: -35%;
+                padding-right: 32%;
+            }
+        }
+    }
+}
