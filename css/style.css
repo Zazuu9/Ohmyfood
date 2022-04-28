@@ -477,6 +477,9 @@ main .Menu .Btn-Commander h3 {
   main .Menu .Card .ENTREES h3 {
     margin-left: 5%;
   }
+  main .Menu .Card .ENTREES .Plat .Titre {
+    width: 90%;
+  }
   main .Menu .Card .PLATS {
     display: flex;
     flex-direction: column;
@@ -485,6 +488,9 @@ main .Menu .Btn-Commander h3 {
   main .Menu .Card .PLATS h3 {
     margin-left: 5%;
   }
+  main .Menu .Card .PLATS .Plat .Titre {
+    width: 90%;
+  }
   main .Menu .Card .DESSERTS {
     display: flex;
     flex-direction: column;
@@ -492,6 +498,9 @@ main .Menu .Btn-Commander h3 {
   }
   main .Menu .Card .DESSERTS h3 {
     margin-left: 5%;
+  }
+  main .Menu .Card .DESSERTS .Plat .Titre {
+    width: 90%;
   }
 }
 footer {
