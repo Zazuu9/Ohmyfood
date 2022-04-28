@@ -394,13 +394,13 @@ main .Menu .Card .Plat .Check {
   display: none;
 }
 main .Menu .Card .Plat:hover .Titre h4 {
-  width: 100%;
+  width: 90%;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
 main .Menu .Card .Plat:hover .Titre p {
-  width: 100%;
+  width: 90%;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -438,6 +438,9 @@ main .Menu .Btn-Commander h3 {
 }
 
 @media screen and (min-width: 768px) {
+  main .BackgroundMenu {
+    background: green;
+  }
   main img {
     max-height: 400px;
     object-position: 30% 70%;
@@ -451,37 +454,44 @@ main .Menu .Btn-Commander h3 {
   }
 }
 @media screen and (min-width: 992px) {
+  main .BackgroundMenu {
+    background: crimson;
+  }
   main img {
     max-height: 500px;
   }
+  main .Menu {
+    margin: 0;
+  }
+  main .Menu h1 {
+    margin-left: 2%;
+  }
   main .Menu .Card {
     display: flex;
-    flex-direction: column;
-    margin-right: 5%;
   }
   main .Menu .Card .ENTREES {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    width: 35%;
   }
-  main .Menu .Card .ENTREES .Plat {
-    width: 45%;
-    margin-bottom: 20px;
+  main .Menu .Card .ENTREES h3 {
+    margin-left: 5%;
   }
   main .Menu .Card .PLATS {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    width: 35%;
   }
-  main .Menu .Card .PLATS .Plat {
-    width: 45%;
-    margin-bottom: 20px;
+  main .Menu .Card .PLATS h3 {
+    margin-left: 5%;
   }
   main .Menu .Card .DESSERTS {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    width: 35%;
   }
-  main .Menu .Card .DESSERTS .Plat {
-    width: 45%;
-    margin-bottom: 20px;
+  main .Menu .Card .DESSERTS h3 {
+    margin-left: 5%;
   }
 }
 footer {

@@ -64,13 +64,13 @@ main {
                 &:hover {
                     .Titre {
                         h4 {
-                            width: 100%;
+                            width: 90%;
                             text-overflow: ellipsis;
                             overflow: hidden;
                             white-space: nowrap;
                         }
                         p {
-                            width: 100%;
+                            width: 90%;
                             text-overflow: ellipsis;
                             overflow: hidden;
                             white-space: nowrap;
@@ -113,6 +113,9 @@ main {
 
 @media screen and (min-width: $breakpoint-tablet) {
     main {
+        .BackgroundMenu {
+        background: green;
+    }
         img {
             max-height: 400px;
             object-position: 30% 70%;
@@ -133,36 +136,41 @@ main {
 
 @media screen and (min-width: $breakpoint-desktop) {
     main {
+        .BackgroundMenu {
+            background: crimson;
+        }
         img {
             max-height: 500px;
         }
         .Menu {
+            margin: 0;
+            h1 {
+                margin-left: 2%;
+            }
             .Card {
                 display: flex;
-                flex-direction: column;
-                margin-right: 5%;
                 .ENTREES {
                     display: flex;
-                    flex-wrap: wrap;
-                    .Plat {
-                        width: 45%;
-                        margin-bottom: 20px;
+                    flex-direction: column;
+                    width: 35%;
+                    h3 {
+                        margin-left: 5%;
                     }
                 }
                 .PLATS {
                     display: flex;
-                    flex-wrap: wrap;
-                    .Plat {
-                        width: 45%;
-                        margin-bottom: 20px;
+                    flex-direction: column;
+                    width: 35%;
+                    h3 {
+                        margin-left: 5%;
                     }
                 }
                 .DESSERTS {
                     display: flex;
-                    flex-wrap: wrap;
-                    .Plat {
-                        width: 45%;
-                        margin-bottom: 20px;
+                    flex-direction: column;
+                    width: 35%;
+                    h3 {
+                        margin-left: 5%;
                     }
                 }
             }
