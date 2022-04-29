@@ -1,0 +1,31 @@
+.Loader {
+    animation-duration: 3s;
+    position: fixed;
+    background: #fff;
+    height: 100vh;
+    inset: 0;
+    z-index: 1;
+    animation: disappear 3s forwards;
+    @include FlexCenterCenter;
+    h1 {
+        font-size: 200%;
+        @include font-family;
+        animation: color-change 3s infinite;
+    }
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+    .Loader {
+        h1 {
+            font-size: 300%;
+        }
+    }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+    .Loader {
+        h1 {
+            font-size: 500%;
+        }
+    }
+}

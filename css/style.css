@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+* {
+  font-family: "Roboto", sans-serif;
+}
+
 @keyframes SildeinRight {
   0% {
     opacity: 0;
@@ -40,10 +44,61 @@
     opacity: 1;
   }
 }
-* {
-  font-family: "Roboto", sans-serif;
+@keyframes disappear {
+  0% {
+    transform: scale(1);
+  }
+  81% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  99% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+@keyframes color-change {
+  0% {
+    color: #9356DC;
+  }
+  50% {
+    color: #FF79DA;
+  }
+  100% {
+    color: #9356DC;
+  }
+}
+.Loader {
+  animation-duration: 3s;
+  position: fixed;
+  background: #fff;
+  height: 100vh;
+  inset: 0;
+  z-index: 1;
+  animation: disappear 3s forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Loader h1 {
+  font-size: 200%;
+  font-family: "Shrikhand", cursive;
+  animation: color-change 3s infinite;
 }
 
+@media screen and (min-width: 768px) {
+  .Loader h1 {
+    font-size: 300%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .Loader h1 {
+    font-size: 500%;
+  }
+}
 header {
   display: flex;
   justify-content: center;

@@ -1,0 +1,55 @@
+@keyframes SildeinRight {
+	0% {
+		opacity: 0;
+		transform: translateX(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes Sildeleft {
+	0% {
+		opacity: 0;
+		transform: translateX(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes rotation {
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes fondu {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	 opacity: 1;
+	}
+}
+
+@keyframes disappear {
+    0% { transform: scale(1) }
+    81% { transform: scale(1); opacity: 1;}
+    99% { transform: scale(1);}
+    100% { transform: scale(0); opacity: 0;} 
+}
+
+@keyframes color-change {
+    0% { color: $color-primary; }
+    50% {color: $color-secondary;}
+    100% {color: $color-primary;}
+}
