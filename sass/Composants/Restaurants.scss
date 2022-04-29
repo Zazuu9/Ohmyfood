@@ -50,22 +50,22 @@
             }
         }
         .HeartIcon {
-            margin-right: 30px;
-            padding-bottom: 10px;
-            .Hover {
-                display: none;
+            position: relative;
+            padding-right: 20px;
+            .fa-solid {
+                position: absolute;
+                left: 0;
+                color: transparent;
             }
-            &:hover {
-                .Normal {
-                    display: none;
-                }
-                .Hover {
-                    display: contents;
-                    color: $color-primary;
-                    cursor: pointer;
-                }
+            &:hover .fa-regular {
+                color: transparent;
             }
-            
+            &:hover .fa-solid {
+                cursor: pointer;
+                background-clip: text;
+                -webkit-background-clip: text;
+                background-image: linear-gradient($color-primary, $color-secondary);
+            }
         }
     }
     &:hover {
