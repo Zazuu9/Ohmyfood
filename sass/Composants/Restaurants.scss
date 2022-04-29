@@ -6,7 +6,6 @@
         padding-left: 5%;
     }
 }
-
 .BlocRestaurants {
     @include FlexColumnCenterCenter;
 }
@@ -18,11 +17,21 @@
     box-shadow: 0px 12px 10px -5px $color-grey-dark-background;
     margin-bottom: 20px;
     transition: 0.2s;
+    position: relative;
     .Img {
         border-radius: 20px 20px 0px 0px;
         height: 180px;
         width: 100%;
         object-fit: cover;
+    }
+    .Tag {
+        background: $color-tertiary;
+        color: #3b8468;
+        padding: 10px 20px;
+        border-radius: 5px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
     }
     .DescRestaurants {
         @include FlexSpaceBetweenCenter;
