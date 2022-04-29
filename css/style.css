@@ -121,12 +121,14 @@ header i {
 .Localisation {
   display: flex;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
   color: #353535;
   background-color: #eaeaea;
 }
 .Localisation i {
-  padding-right: 15px;
+  position: absolute;
+  margin-left: -155px;
+  margin-top: -5px;
 }
 .Localisation p {
   font-weight: bold;

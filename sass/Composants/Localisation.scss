@@ -1,9 +1,11 @@
 .Localisation {
-    @include FlexCenterBaseline;
+    @include FlexCenterCenter;
     color: $color-grey-text;
     background-color: $color-grey-dark-background;
         i {
-            padding-right: 15px;
+            position: absolute;
+            margin-left: -155px;
+            margin-top: -5px;
         }
         p {
             font-weight: bold;
