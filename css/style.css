@@ -28,6 +28,16 @@
     transform: translateX(0);
   }
 }
+@keyframes ApparitionMenu {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 @keyframes rotation {
   0% {
     transform: rotate(0);
@@ -466,6 +476,15 @@ main .Menu .Card .ENTREES h3:after, main .Menu .Card .PLATS h3:after, main .Menu
   position: absolute;
   left: 0;
   bottom: 0;
+}
+main .Menu .Card .ENTREES {
+  animation: ApparitionMenu 0.8s ease 0.5s 1 normal both;
+}
+main .Menu .Card .PLATS {
+  animation: ApparitionMenu 0.8s ease 1.2s 1 normal both;
+}
+main .Menu .Card .DESSERTS {
+  animation: ApparitionMenu 0.8s ease 2s 1 normal both;
 }
 main .Menu .Card .Plat {
   display: flex;

@@ -43,6 +43,15 @@ main {
                     }
                 }
             }
+            .ENTREES {
+                animation: ApparitionMenu 0.8s ease 0.5s 1 normal both;
+            }
+            .PLATS {
+                animation: ApparitionMenu 0.8s ease 1.2s 1 normal both;
+            }
+            .DESSERTS {
+                animation: ApparitionMenu 0.8s ease 2s 1 normal both;
+            }
             .Plat {
                 @include FlexSpaceBetweenCenter;
                 background-color: white;
