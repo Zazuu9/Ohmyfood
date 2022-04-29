@@ -32,6 +32,14 @@
     transform: rotate(360deg);
   }
 }
+@keyframes fondu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -306,12 +314,14 @@ header i {
 }
 .CaseRestaurants .DescRestaurants .HeartIcon:hover .fa-regular {
   color: transparent;
+  animation: fondu 1 ease;
 }
 .CaseRestaurants .DescRestaurants .HeartIcon:hover .fa-solid {
   cursor: pointer;
   background-clip: text;
   -webkit-background-clip: text;
   background-image: linear-gradient(#9356DC, #FF79DA);
+  animation: fondu 1s ease;
 }
 .CaseRestaurants:hover {
   transform: scale(1.015);

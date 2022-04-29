@@ -59,12 +59,14 @@
             }
             &:hover .fa-regular {
                 color: transparent;
+                animation:fondu 1 ease;
             }
             &:hover .fa-solid {
                 cursor: pointer;
                 background-clip: text;
                 -webkit-background-clip: text;
                 background-image: linear-gradient($color-primary, $color-secondary);
+                animation:fondu 1s ease;
             }
         }
     }
