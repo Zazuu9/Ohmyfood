@@ -553,6 +553,9 @@ footer ul li a {
 footer ul li i {
   margin-right: 10px;
 }
+footer ul li .Rotate {
+  transform: rotate(-45deg);
+}
 footer ul li .Proposition {
   padding-left: 7px;
 }
