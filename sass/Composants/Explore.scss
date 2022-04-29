@@ -25,5 +25,12 @@
         color: white;
         background: linear-gradient(to top left, $color-primary, $color-secondary);
         margin: auto;
+        box-shadow: 0px 8px 10px -5px $color-grey-icon;
+        &:hover {
+            cursor: pointer;
+            transition: 0.3s;
+            filter: brightness(105%);
+            box-shadow: 0px 12px 10px -5px $color-grey-icon;
+        }
     }
 }
