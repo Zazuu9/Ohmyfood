@@ -26,6 +26,11 @@ footer {
                     font-weight: lighter;
                 }
             }
+            &:hover {
+                h4 {
+                    text-decoration: underline;
+                }
+            }
         }
     }  
 }

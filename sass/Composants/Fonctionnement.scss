@@ -105,8 +105,13 @@
 @media screen and (min-width: $breakpoint-desktop) {
     .Fonctionnement {
         display: flex;
+        h1 {
+            margin-left: -4%;
+        }
         .Case {
             display: flex;
+            margin-left: -4%;
+            margin-right: -4%;
             .CaseFonctionnement {
                 width: 30%;
                 margin-left: 0;

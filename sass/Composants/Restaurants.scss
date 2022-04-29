@@ -1,5 +1,6 @@
 .Restaurants {
     background-color: $color-grey-background;
+    margin-bottom: -16px;
     h1 {
         padding-top: 50px;
         padding-left: 5%;
@@ -78,11 +79,19 @@
 
 
 @media screen and (min-width: $breakpoint-desktop) {
-    .BlocRestaurants {
-        .CaseRestaurants {
-            height: auto;
-            .Img {
-                height: 300px;
+    .Restaurants {
+        h1 {
+            padding: 1%;
+        }
+        .BlocRestaurants {
+            @include FlexRowNoWrap;
+            .CaseRestaurants {
+                height: auto;
+                margin-left: 1%;
+                margin-right: 1%;
+                .Img {
+                 height: 200px;
+                }
             }
         }
     }

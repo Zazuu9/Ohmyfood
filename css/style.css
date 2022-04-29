@@ -213,8 +213,13 @@ header i {
   .Fonctionnement {
     display: flex;
   }
+  .Fonctionnement h1 {
+    margin-left: -4%;
+  }
   .Fonctionnement .Case {
     display: flex;
+    margin-left: -4%;
+    margin-right: -4%;
   }
   .Fonctionnement .Case .CaseFonctionnement {
     width: 30%;
@@ -232,6 +237,7 @@ header i {
 }
 .Restaurants {
   background-color: #f6f6f6;
+  margin-bottom: -16px;
 }
 .Restaurants h1 {
   padding-top: 50px;
@@ -313,11 +319,21 @@ header i {
   }
 }
 @media screen and (min-width: 992px) {
-  .BlocRestaurants .CaseRestaurants {
-    height: auto;
+  .Restaurants h1 {
+    padding: 1%;
   }
-  .BlocRestaurants .CaseRestaurants .Img {
-    height: 300px;
+  .Restaurants .BlocRestaurants {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .Restaurants .BlocRestaurants .CaseRestaurants {
+    height: auto;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  .Restaurants .BlocRestaurants .CaseRestaurants .Img {
+    height: 200px;
   }
 }
 main img {
@@ -333,7 +349,7 @@ main .BackgroundMenu {
   position: sticky;
   z-index: 2;
   padding-bottom: 80px;
-  margin-bottom: -20px;
+  margin-bottom: -16px;
 }
 main .Menu {
   margin-left: 5%;
@@ -532,6 +548,9 @@ footer ul li .Proposition {
 }
 footer ul li .MentionsContact h4 {
   font-weight: lighter;
+}
+footer ul li:hover h4 {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
