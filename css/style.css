@@ -349,9 +349,20 @@ main .Menu h1 {
   margin-right: 5%;
   padding-top: 40px;
 }
-main .Menu .Card h3 {
-  font-size: 17px;
+main .Menu .Card .ENTREES h3, main .Menu .Card .PLATS h3, main .Menu .Card .DESSERTS h3 {
+  font-size: 18px;
   font-weight: normal;
+  position: relative;
+  padding-bottom: 10px;
+}
+main .Menu .Card .ENTREES h3:after, main .Menu .Card .PLATS h3:after, main .Menu .Card .DESSERTS h3:after {
+  content: "";
+  width: 50px;
+  height: 4px;
+  background-color: #99E2D0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 main .Menu .Card .Plat {
   display: flex;
@@ -373,12 +384,16 @@ main .Menu .Card .Plat .Titre h4 {
   font-size: 16px;
   margin-top: 15px;
   margin-bottom: -8px;
-  width: 100%;
+  width: 140%;
+  text-overflow: ellipsis;
+  overflow: hidden;
   white-space: nowrap;
 }
 main .Menu .Card .Plat .Titre p {
   font-size: 14px;
-  width: 100%;
+  width: 140%;
+  text-overflow: ellipsis;
+  overflow: hidden;
   white-space: nowrap;
 }
 main .Menu .Card .Plat .Prix {
@@ -451,6 +466,10 @@ main .Menu .Btn-Commander h3 {
   main img {
     max-height: 500px;
   }
+  main .BackgroundMenu {
+    width: 95%;
+    margin-left: 2.5%;
+  }
   main .Menu {
     margin: 0;
   }
@@ -468,9 +487,6 @@ main .Menu .Btn-Commander h3 {
   main .Menu .Card .ENTREES h3 {
     margin-left: 5%;
   }
-  main .Menu .Card .ENTREES .Plat .Titre {
-    width: 90%;
-  }
   main .Menu .Card .PLATS {
     display: flex;
     flex-direction: column;
@@ -479,9 +495,6 @@ main .Menu .Btn-Commander h3 {
   main .Menu .Card .PLATS h3 {
     margin-left: 5%;
   }
-  main .Menu .Card .PLATS .Plat .Titre {
-    width: 90%;
-  }
   main .Menu .Card .DESSERTS {
     display: flex;
     flex-direction: column;
@@ -489,9 +502,6 @@ main .Menu .Btn-Commander h3 {
   }
   main .Menu .Card .DESSERTS h3 {
     margin-left: 5%;
-  }
-  main .Menu .Card .DESSERTS .Plat .Titre {
-    width: 90%;
   }
 }
 footer {

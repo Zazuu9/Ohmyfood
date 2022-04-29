@@ -26,9 +26,22 @@ main {
             padding-top: 40px;
         }
         .Card {
-            h3 {
-                font-size: 17px;
-                font-weight: normal;
+            .ENTREES, .PLATS, .DESSERTS {
+                h3 {
+                    font-size: 18px;
+                    font-weight: normal;
+                    position: relative;
+                    padding-bottom: 10px;
+                    &:after {
+                        content: "";
+                        width: 50px;
+                        height: 4px;
+                        background-color: $color-tertiary;
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                    }
+                }
             }
             .Plat {
                 @include FlexSpaceBetweenCenter;
@@ -45,11 +58,17 @@ main {
                     h4 {
                         font-size: 16px;
                         margin-top: 15px;
-                        margin-bottom: -8px;width: 100%;
+                        margin-bottom: -8px;
+                        width: 140%;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
                         white-space: nowrap;
                     }
                     p {
-                        font-size: 14px;width: 100%;
+                        font-size: 14px;
+                        width: 140%;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
                         white-space: nowrap;
                     }
                 }
@@ -137,12 +156,17 @@ main {
         img {
             max-height: 500px
         }
+        .BackgroundMenu {
+            width: 95%;
+            margin-left: 2.5%;
+        }
         .Menu {
             margin: 0;
             h1 {
                 margin-left: 2%;
             }
             .Card {
+                .Plat {}
                 display: flex;
                 .ENTREES {
                     display: flex;
@@ -151,11 +175,7 @@ main {
                     h3 {
                         margin-left: 5%;
                     }
-                    .Plat {
-                        .Titre {
-                            width: 90%;
-                        }
-                    }
+                    
                 }
                 .PLATS {
                     display: flex;
@@ -164,11 +184,7 @@ main {
                     h3 {
                         margin-left: 5%;
                     }
-                    .Plat {
-                        .Titre {
-                            width: 90%;
-                        }
-                    }
+                    
                 }
                 .DESSERTS {
                     display: flex;
@@ -176,11 +192,6 @@ main {
                     width: 35%;
                     h3 {
                         margin-left: 5%;
-                    }
-                    .Plat {
-                        .Titre {
-                            width: 90%;
-                        }
                     }
                 }
             }
