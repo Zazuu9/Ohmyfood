@@ -24,6 +24,26 @@ main {
             font-weight: normal;
             margin-right: 5%;
             padding-top: 40px;
+            .HeartIcon {
+                position: relative;
+                padding-right: 20px;
+                .fa-solid {
+                    position: absolute;
+                    left: 0;
+                    color: transparent;
+                }
+                &:hover .fa-regular {
+                    color: transparent;
+                    animation:fondu 1 ease;
+                }
+                &:hover .fa-solid {
+                    cursor: pointer;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    background-image: linear-gradient($color-primary, $color-secondary);
+                    animation:fondu 1s ease;
+                }
+            }
         }
         .Card {
             .ENTREES, .PLATS, .DESSERTS {
