@@ -551,7 +551,6 @@ main .Menu .Card .Plat:hover .Check {
   border-radius: 0 15px 15px 0;
   background-color: #99E2D0;
   color: white;
-  rotate: 360deg;
   animation: SildeinRight 0.5s ease 0s 1 normal forwards;
 }
 main .Menu .Card .Plat:hover .Check i {
