@@ -548,18 +548,19 @@ main .Menu .Card .Plat .Check {
   display: none;
 }
 main .Menu .Card .Plat:hover .Titre h4 {
-  width: 90%;
+  width: 110%;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
 main .Menu .Card .Plat:hover .Titre p {
-  width: 90%;
+  width: 110%;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
 main .Menu .Card .Plat:hover .Prix {
+  margin-right: -10%;
   animation: Sildeleft 0.5s ease 0s 1 normal forwards;
 }
 main .Menu .Card .Plat:hover .Check {

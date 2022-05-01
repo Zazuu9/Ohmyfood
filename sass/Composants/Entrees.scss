@@ -113,19 +113,20 @@ main {
                 &:hover {
                     .Titre {
                         h4 {
-                            width: 90%;
+                            width: 110%;
                             text-overflow: ellipsis;
                             overflow: hidden;
                             white-space: nowrap;
                         }
                         p {
-                            width: 90%;
+                            width: 110%;
                             text-overflow: ellipsis;
                             overflow: hidden;
                             white-space: nowrap;
                         }
                     }
                     .Prix {
+                        margin-right: -10%;
                         animation: Sildeleft 0.5s ease 0s 1 normal forwards;
                     }
                     .Check {
