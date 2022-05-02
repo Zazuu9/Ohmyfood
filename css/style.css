@@ -188,7 +188,6 @@ header i {
   display: flex;
   flex-direction: column;
   margin-left: 5%;
-  overflow-x: hidden;
 }
 .Fonctionnement .CaseFonctionnement {
   display: flex;
@@ -284,24 +283,24 @@ header i {
 }
 @media screen and (min-width: 992px) {
   .Fonctionnement {
-    display: flex;
+    margin-left: -4%;
   }
   .Fonctionnement h1 {
-    margin-left: -4%;
+    margin-left: 5%;
   }
   .Fonctionnement .Case {
     display: flex;
-    margin-left: -4%;
-    margin-right: -4%;
+    margin-left: 5%;
   }
   .Fonctionnement .Case .CaseFonctionnement {
-    width: 30%;
-    margin-left: 0;
-    margin-right: 2.5%;
+    width: 31%;
+    margin-left: 1%;
+    margin-right: 1%;
   }
   .Fonctionnement .Case .CaseFonctionnement1 {
-    width: 30%;
-    margin: 0;
+    width: 31%;
+    margin-left: 1%;
+    margin-right: 1%;
   }
   .Fonctionnement .Case .CaseFonctionnement1 .IconFonctionnement {
     margin-left: 2%;
