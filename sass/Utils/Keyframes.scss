@@ -78,12 +78,17 @@
     100% {color: $color-primary;}
 }
 
-@keyframes bounce_circleG{
-	0%{
+@keyframes LoadingSpinner {
+	0% {
+		transform: scale(0.5);
+		background-color: $color-primary;
 	}
-	50%{
-		background-color:$color-secondary
+	50% {
+		transform: scale(1);
+		background-color: $color-secondary;
 	}
-	100%{
+	100% {
+		transform: scale(0.5);
+		background-color: $color-primary;
 	}
 }
