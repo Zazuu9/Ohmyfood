@@ -187,6 +187,7 @@ header i {
   display: flex;
   flex-direction: column;
   margin-left: 5%;
+  overflow-x: hidden;
 }
 .Fonctionnement .CaseFonctionnement {
   display: flex;
