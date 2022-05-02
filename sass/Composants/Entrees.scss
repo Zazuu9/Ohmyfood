@@ -64,13 +64,13 @@ main {
                 }
             }
             .ENTREES {
-                animation: ApparitionMenu 0.8s ease 0.5s 1 normal both;
+                animation: ApparitionMenu 0.5s ease 0.5s 1 normal both;
             }
             .PLATS {
-                animation: ApparitionMenu 0.8s ease 1.2s 1 normal both;
+                animation: ApparitionMenu 0.5s ease 1s 1 normal both;
             }
             .DESSERTS {
-                animation: ApparitionMenu 0.8s ease 2s 1 normal both;
+                animation: ApparitionMenu 0.5s ease 1.5s 1 normal both;
             }
             .Plat {
                 @include FlexSpaceBetweenCenter;
@@ -102,13 +102,19 @@ main {
                     }
                 }
                 .Prix {
+                    margin-right: -40%;
                     font-size: 15px;
                     font-weight: bold;
                     padding-top: 25px;
-                    padding-right: 10px;
                 }
-                .Check {
-                    display: none;
+                .Check { 
+                    @include FlexCenterCenter;
+                    height: 65px;
+                    width: 65px;
+                    border-radius: 0 15px 15px 0;
+                    background-color: $color-tertiary;
+                    color: white;
+                    animation: SlideoutCheck 0.4s ease 0s 1 normal forwards;
                 }
                 &:hover {
                     .Titre {
@@ -127,16 +133,10 @@ main {
                     }
                     .Prix {
                         margin-right: -10%;
-                        animation: Sildeleft 0.5s ease 0s 1 normal forwards;
+                        animation: SlideinPrice 0.5s ease 0s 1 normal forwards;
                     }
                     .Check {
-                        @include FlexCenterCenter;
-                        height: 65px;
-                        width: 65px;
-                        border-radius: 0 15px 15px 0;
-                        background-color: $color-tertiary;
-                        color: white;
-                        animation: SildeinRight 0.5s ease 0s 1 normal forwards;
+                        animation: SlideinCheck 0.5s ease 0s 1 normal forwards;
                         i {
                             animation: rotation 1s ease 0s 1 normal forwards;
                         }

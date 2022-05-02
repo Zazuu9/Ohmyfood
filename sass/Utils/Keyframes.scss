@@ -1,4 +1,4 @@
-@keyframes SildeinRight {
+@keyframes SlideinCheck {
 	0% {
 		opacity: 0;
 		transform: translateX(250px);
@@ -10,7 +10,19 @@
 	}
 }
 
-@keyframes Sildeleft {
+@keyframes SlideoutCheck {
+	0% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateX(250px);
+	}
+}
+
+@keyframes SlideinPrice {
 	0% {
 		opacity: 0;
 		transform: translateX(250px);

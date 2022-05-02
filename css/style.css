@@ -8,7 +8,7 @@
   font-family: "Roboto", sans-serif;
 }
 
-@keyframes SildeinRight {
+@keyframes SlideinCheck {
   0% {
     opacity: 0;
     transform: translateX(250px);
@@ -18,7 +18,17 @@
     transform: translateX(0);
   }
 }
-@keyframes Sildeleft {
+@keyframes SlideoutCheck {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(250px);
+  }
+}
+@keyframes SlideinPrice {
   0% {
     opacity: 0;
     transform: translateX(250px);
@@ -489,13 +499,13 @@ main .Menu .Card .ENTREES h2:after, main .Menu .Card .PLATS h2:after, main .Menu
   bottom: 0;
 }
 main .Menu .Card .ENTREES {
-  animation: ApparitionMenu 0.8s ease 0.5s 1 normal both;
+  animation: ApparitionMenu 0.5s ease 0.5s 1 normal both;
 }
 main .Menu .Card .PLATS {
-  animation: ApparitionMenu 0.8s ease 1.2s 1 normal both;
+  animation: ApparitionMenu 0.5s ease 1s 1 normal both;
 }
 main .Menu .Card .DESSERTS {
-  animation: ApparitionMenu 0.8s ease 2s 1 normal both;
+  animation: ApparitionMenu 0.5s ease 1.5s 1 normal both;
 }
 main .Menu .Card .Plat {
   display: flex;
@@ -530,13 +540,21 @@ main .Menu .Card .Plat .Titre p {
   white-space: nowrap;
 }
 main .Menu .Card .Plat .Prix {
+  margin-right: -40%;
   font-size: 15px;
   font-weight: bold;
   padding-top: 25px;
-  padding-right: 10px;
 }
 main .Menu .Card .Plat .Check {
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+  width: 65px;
+  border-radius: 0 15px 15px 0;
+  background-color: #99E2D0;
+  color: white;
+  animation: SlideoutCheck 0.4s ease 0s 1 normal forwards;
 }
 main .Menu .Card .Plat:hover .Titre h3 {
   width: 110%;
@@ -552,18 +570,10 @@ main .Menu .Card .Plat:hover .Titre p {
 }
 main .Menu .Card .Plat:hover .Prix {
   margin-right: -10%;
-  animation: Sildeleft 0.5s ease 0s 1 normal forwards;
+  animation: SlideinPrice 0.5s ease 0s 1 normal forwards;
 }
 main .Menu .Card .Plat:hover .Check {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 65px;
-  width: 65px;
-  border-radius: 0 15px 15px 0;
-  background-color: #99E2D0;
-  color: white;
-  animation: SildeinRight 0.5s ease 0s 1 normal forwards;
+  animation: SlideinCheck 0.5s ease 0s 1 normal forwards;
 }
 main .Menu .Card .Plat:hover .Check i {
   animation: rotation 1s ease 0s 1 normal forwards;
