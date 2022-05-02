@@ -4,10 +4,11 @@ footer {
     ul {
         li {
             list-style: none;
-            h2 {
+            h3 {
                 @include font-family;
                 font-weight: normal;
-                padding-bottom: 10px
+                padding-bottom: 10px;
+                font-size: 22px;
             }
             a{
                 @include FlexFlexStartCenter;

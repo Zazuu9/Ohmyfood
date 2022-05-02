@@ -16,7 +16,8 @@
             .TexteCase {
                 @include FlexFlexStartBaseline;
                 width: 100%;
-                    h3 {
+                    h2 {
+                        font-size: 18px;
                         margin-left: -10px;
                         text-align: center;
                         background-color: $color-primary;
@@ -29,6 +30,9 @@
                     .IconFonctionnement {
                         padding-left: 7%;
                         padding-right: 7%;
+                    }
+                    h3 {
+                        font-size: 17px
                     }
             }
     }
@@ -44,7 +48,8 @@
             .TexteCase1 {
                 @include FlexFlexStartBaseline;
                 width: 100%;
-                    h3 {
+                    h2 {
+                        font-size: 18px;
                         margin-left: -10px;
                         text-align: center;
                         background-color: $color-primary;
@@ -59,23 +64,8 @@
                         padding-right: 7%;
                         color: $color-primary;
                     }
-            }
-            .TexteCase1 {
-                @include FlexFlexStartBaseline;
-                width: 100%;
                     h3 {
-                        margin-left: -10px;
-                        text-align: center;
-                        background-color: $color-primary;
-                        border-radius: 20px;
-                        width: 23px;
-                        height: 22px;
-                        color: white;
-                    }
-                    .IconFonctionnement {
-                        padding-left: 7%;
-                        padding-right: 7%;
-                        color: $color-primary;
+                        font-size: 17px;
                     }
             }
     }

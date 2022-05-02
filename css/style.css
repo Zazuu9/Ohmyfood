@@ -206,7 +206,8 @@ header i {
   align-items: baseline;
   width: 100%;
 }
-.Fonctionnement .CaseFonctionnement .TexteCase h3 {
+.Fonctionnement .CaseFonctionnement .TexteCase h2 {
+  font-size: 18px;
   margin-left: -10px;
   text-align: center;
   background-color: #9356DC;
@@ -219,6 +220,9 @@ header i {
 .Fonctionnement .CaseFonctionnement .TexteCase .IconFonctionnement {
   padding-left: 7%;
   padding-right: 7%;
+}
+.Fonctionnement .CaseFonctionnement .TexteCase h3 {
+  font-size: 17px;
 }
 .Fonctionnement .CaseFonctionnement1 {
   display: flex;
@@ -238,7 +242,8 @@ header i {
   align-items: baseline;
   width: 100%;
 }
-.Fonctionnement .CaseFonctionnement1 .TexteCase1 h3 {
+.Fonctionnement .CaseFonctionnement1 .TexteCase1 h2 {
+  font-size: 18px;
   margin-left: -10px;
   text-align: center;
   background-color: #9356DC;
@@ -253,25 +258,8 @@ header i {
   padding-right: 7%;
   color: #9356DC;
 }
-.Fonctionnement .CaseFonctionnement1 .TexteCase1 {
-  display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
-  width: 100%;
-}
 .Fonctionnement .CaseFonctionnement1 .TexteCase1 h3 {
-  margin-left: -10px;
-  text-align: center;
-  background-color: #9356DC;
-  border-radius: 20px;
-  width: 23px;
-  height: 22px;
-  color: white;
-}
-.Fonctionnement .CaseFonctionnement1 .TexteCase1 .IconFonctionnement {
-  padding-left: 7%;
-  padding-right: 7%;
-  color: #9356DC;
+  font-size: 17px;
 }
 
 @media screen and (min-width: 768px) {
@@ -371,7 +359,8 @@ header i {
   color: black;
   text-decoration: none;
 }
-.CaseRestaurants .DescRestaurants .TestDesc a h3 {
+.CaseRestaurants .DescRestaurants .TestDesc a h2 {
+  font-size: 18px;
   margin-top: 10px;
   margin-bottom: -10px;
 }
@@ -661,10 +650,11 @@ footer {
 footer ul li {
   list-style: none;
 }
-footer ul li h2 {
+footer ul li h3 {
   font-family: "Shrikhand", cursive;
   font-weight: normal;
   padding-bottom: 10px;
+  font-size: 22px;
 }
 footer ul li a {
   display: flex;
