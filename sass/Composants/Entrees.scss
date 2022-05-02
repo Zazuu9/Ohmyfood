@@ -25,26 +25,29 @@ main {
             margin-right: 5%;
             padding-top: 40px;
             .HeartIcon {
-                position: relative;
                 padding-right: 20px;
-                .fa-solid {
+                .fa-regular {
                     position: absolute;
-                    left: 0;
-                    color: transparent;
+                    font-size: 35px;
                 }
-                &:hover .fa-regular {
+                .fa-solid {
+                    position: relative;
+                    font-size: 35px;
                     color: transparent;
-                    animation:fondu 1 ease;
-                }
-                &:hover .fa-solid {
-                    cursor: pointer;
+                    background-image: linear-gradient($color-primary, $color-secondary);
                     background-clip: text;
                     -webkit-background-clip: text;
-                    background-image: linear-gradient($color-primary, $color-secondary);
-                    animation:fondu 1s ease;
+                    opacity: 0;
+                    transition: all 200ms ease-in-out;
+                    &:hover {
+                        cursor: pointer;
+                        opacity: 1;
+                        transform: scale(1.1);
+                    }
                 }
+            }
         }
-    }
+   
         .Card {
             .ENTREES, .PLATS, .DESSERTS {
                 h2 {
