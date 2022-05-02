@@ -129,7 +129,7 @@
   border-radius: 50%;
   display: inline-block;
   margin: 1px;
-  animation: LoadingSpinner 2.5s ease-in-out infinite;
+  animation: LoadingSpinner 1.6s ease-in-out infinite;
 }
 .Loader #Dotx5 .Dot {
   animation-delay: 0s;
