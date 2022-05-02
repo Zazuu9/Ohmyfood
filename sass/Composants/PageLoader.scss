@@ -1,4 +1,5 @@
 .Loader {
+    @include FlexCenterCenter;
     animation-duration: 3s;
     position: fixed;
     background: #fff;
@@ -6,18 +7,57 @@
     inset: 0;
     z-index: 1;
     animation: disappear 3s forwards;
-    @include FlexCenterCenter;
     h1 {
         font-size: 200%;
         @include font-family;
-        animation: color-change 3s infinite;
+        animation: color-change 2.5s infinite;
+        padding-right: 10px;
+    }
+    #circleG{
+        width: auto;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .circleG{
+        background-color:$color-primary;
+        height:6px;
+        width:6px;
+        animation-name:bounce_circleG;
+        animation-duration:1.35s;
+        animation-iteration-count:infinite;
+        animation-direction:linear;
+        border-radius:9px;
+    }
+    div#circleG > .circleG:nth-child(even) {
+        margin: 0 4px;
+    }
+    #circleG_1{
+        animation-delay:0.27s;
+    }
+    #circleG_2{
+        animation-delay:0.63s;
+    }
+    #circleG_3{
+        animation-delay:0.8099999999999999s;
     }
 }
+
 
 @media screen and (min-width: $breakpoint-tablet) {
     .Loader {
         h1 {
             font-size: 300%;
+        } 
+        #circleG {
+            margin-top: 16px;
+        }
+        .circleG {
+            height: 10px;
+            width: 10px;
+        }
+        div#circleG > .circleG:nth-child(even) {
+            margin: 0 7px;
         }
     }
 }
@@ -26,6 +66,16 @@
     .Loader {
         h1 {
             font-size: 500%;
+        }
+        #circleG {
+            margin-top: 35px;
+        }
+        .circleG {
+            height: 15px;
+            width: 15px;
+        }
+        div#circleG > .circleG:nth-child(even) {
+            margin: 0 12px;
         }
     }
 }

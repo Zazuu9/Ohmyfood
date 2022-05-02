@@ -91,7 +91,15 @@
     color: #9356DC;
   }
 }
+@keyframes bounce_circleG {
+  50% {
+    background-color: #FF79DA;
+  }
+}
 .Loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   animation-duration: 3s;
   position: fixed;
   background: #fff;
@@ -99,24 +107,70 @@
   inset: 0;
   z-index: 1;
   animation: disappear 3s forwards;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .Loader h1 {
   font-size: 200%;
   font-family: "Shrikhand", cursive;
-  animation: color-change 3s infinite;
+  animation: color-change 2.5s infinite;
+  padding-right: 10px;
+}
+.Loader #circleG {
+  width: auto;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.Loader .circleG {
+  background-color: #9356DC;
+  height: 6px;
+  width: 6px;
+  animation-name: bounce_circleG;
+  animation-duration: 1.35s;
+  animation-iteration-count: infinite;
+  animation-direction: linear;
+  border-radius: 9px;
+}
+.Loader div#circleG > .circleG:nth-child(even) {
+  margin: 0 4px;
+}
+.Loader #circleG_1 {
+  animation-delay: 0.27s;
+}
+.Loader #circleG_2 {
+  animation-delay: 0.63s;
+}
+.Loader #circleG_3 {
+  animation-delay: 0.81s;
 }
 
 @media screen and (min-width: 768px) {
   .Loader h1 {
     font-size: 300%;
   }
+  .Loader #circleG {
+    margin-top: 16px;
+  }
+  .Loader .circleG {
+    height: 10px;
+    width: 10px;
+  }
+  .Loader div#circleG > .circleG:nth-child(even) {
+    margin: 0 7px;
+  }
 }
 @media screen and (min-width: 992px) {
   .Loader h1 {
     font-size: 500%;
+  }
+  .Loader #circleG {
+    margin-top: 35px;
+  }
+  .Loader .circleG {
+    height: 15px;
+    width: 15px;
+  }
+  .Loader div#circleG > .circleG:nth-child(even) {
+    margin: 0 12px;
   }
 }
 header {

@@ -77,3 +77,13 @@
     50% {color: $color-secondary;}
     100% {color: $color-primary;}
 }
+
+@keyframes bounce_circleG{
+	0%{
+	}
+	50%{
+		background-color:$color-secondary
+	}
+	100%{
+	}
+}
