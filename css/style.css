@@ -472,13 +472,13 @@ main .Menu h1 .HeartIcon:hover .fa-solid {
   background-image: linear-gradient(#9356DC, #FF79DA);
   animation: fondu 1s ease;
 }
-main .Menu .Card .ENTREES h3, main .Menu .Card .PLATS h3, main .Menu .Card .DESSERTS h3 {
+main .Menu .Card .ENTREES h2, main .Menu .Card .PLATS h2, main .Menu .Card .DESSERTS h2 {
   font-size: 18px;
   font-weight: normal;
   position: relative;
   padding-bottom: 10px;
 }
-main .Menu .Card .ENTREES h3:after, main .Menu .Card .PLATS h3:after, main .Menu .Card .DESSERTS h3:after {
+main .Menu .Card .ENTREES h2:after, main .Menu .Card .PLATS h2:after, main .Menu .Card .DESSERTS h2:after {
   content: "";
   width: 50px;
   height: 4px;
@@ -512,7 +512,7 @@ main .Menu .Card .Plat {
 main .Menu .Card .Plat .Titre {
   width: 60%;
 }
-main .Menu .Card .Plat .Titre h4 {
+main .Menu .Card .Plat .Titre h3 {
   font-size: 16px;
   margin-top: 15px;
   margin-bottom: -8px;
@@ -537,7 +537,7 @@ main .Menu .Card .Plat .Prix {
 main .Menu .Card .Plat .Check {
   display: none;
 }
-main .Menu .Card .Plat:hover .Titre h4 {
+main .Menu .Card .Plat:hover .Titre h3 {
   width: 110%;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -593,8 +593,8 @@ main .Menu .Btn-Commander h3:hover {
     max-height: 400px;
     object-position: 30% 70%;
   }
-  main .Menu .Card h3 {
-    margin-left: 2%;
+  main .Menu .Card h2 {
+    margin-left: 5%;
   }
   main .Menu .Card .Plat {
     margin-left: 5%;
@@ -623,7 +623,7 @@ main .Menu .Btn-Commander h3:hover {
     flex-direction: column;
     width: 35%;
   }
-  main .Menu .Card .ENTREES h3 {
+  main .Menu .Card .ENTREES h2 {
     margin-left: 5%;
   }
   main .Menu .Card .PLATS {
@@ -631,7 +631,7 @@ main .Menu .Btn-Commander h3:hover {
     flex-direction: column;
     width: 35%;
   }
-  main .Menu .Card .PLATS h3 {
+  main .Menu .Card .PLATS h2 {
     margin-left: 5%;
   }
   main .Menu .Card .DESSERTS {
@@ -639,7 +639,7 @@ main .Menu .Btn-Commander h3:hover {
     flex-direction: column;
     width: 35%;
   }
-  main .Menu .Card .DESSERTS h3 {
+  main .Menu .Card .DESSERTS h2 {
     margin-left: 5%;
   }
 }

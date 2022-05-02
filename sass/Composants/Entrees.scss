@@ -47,7 +47,7 @@ main {
     }
         .Card {
             .ENTREES, .PLATS, .DESSERTS {
-                h3 {
+                h2 {
                     font-size: 18px;
                     font-weight: normal;
                     position: relative;
@@ -84,7 +84,7 @@ main {
                 cursor: pointer;
                 .Titre {
                     width: 60%;
-                    h4 {
+                    h3 {
                         font-size: 16px;
                         margin-top: 15px;
                         margin-bottom: -8px;
@@ -112,7 +112,7 @@ main {
                 }
                 &:hover {
                     .Titre {
-                        h4 {
+                        h3 {
                             width: 110%;
                             text-overflow: ellipsis;
                             overflow: hidden;
@@ -175,8 +175,8 @@ main {
         }
         .Menu {
             .Card {
-                h3 {
-                    margin-left: 2%;
+                h2 {
+                    margin-left: 5%;
                 }
                 .Plat {
                     margin-left: 5%;
@@ -207,7 +207,7 @@ main {
                     display: flex;
                     flex-direction: column;
                     width: 35%;
-                    h3 {
+                    h2 {
                         margin-left: 5%;
                     }
                     
@@ -216,7 +216,7 @@ main {
                     display: flex;
                     flex-direction: column;
                     width: 35%;
-                    h3 {
+                    h2 {
                         margin-left: 5%;
                     }
                     
@@ -225,7 +225,7 @@ main {
                     display: flex;
                     flex-direction: column;
                     width: 35%;
-                    h3 {
+                    h2 {
                         margin-left: 5%;
                     }
                 }
