@@ -91,18 +91,9 @@
     color: #9356DC;
   }
 }
-@keyframes LoadingSpinner {
-  0% {
-    transform: scale(0.5);
-    background-color: #9356DC;
-  }
-  50% {
-    transform: scale(1);
-    background-color: #FF79DA;
-  }
-  100% {
-    transform: scale(0.5);
-    background-color: #9356DC;
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
   }
 }
 .Loader {
@@ -118,53 +109,34 @@
   z-index: 1;
   animation: disappear 3s forwards;
 }
-.Loader h1 {
-  font-size: 200%;
-  font-family: "Shrikhand", cursive;
-  animation: color-change 2.5s infinite;
-}
-.Loader #Dotx5 .Dot, .Loader #Dotx5 .Dot1, .Loader #Dotx5 .Dot2, .Loader #Dotx5 .Dot3, .Loader #Dotx5 .Dot4 {
-  height: 15px;
-  width: 15px;
+.Loader .spinner:before {
+  content: "";
+  display: flex;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  display: inline-block;
-  margin: 1px;
-  animation: LoadingSpinner 1.6s ease-in-out infinite;
-}
-.Loader #Dotx5 .Dot {
-  animation-delay: 0s;
-}
-.Loader #Dotx5 .Dot1 {
-  animation-delay: 0.2s;
-}
-.Loader #Dotx5 .Dot2 {
-  animation-delay: 0.4s;
-}
-.Loader #Dotx5 .Dot3 {
-  animation-delay: 0.6s;
-}
-.Loader #Dotx5 .Dot4 {
-  animation-delay: 0.8s;
+  border: 3px solid transparent;
+  border-top-color: #9356DC;
+  border-bottom-color: #FF79DA;
+  animation: spinner 0.8s ease infinite;
 }
 
 @media screen and (min-width: 768px) {
   .Loader h1 {
     font-size: 300%;
   }
-  .Loader #Dotx5 .Dot, .Loader #Dotx5 .Dot1, .Loader #Dotx5 .Dot2, .Loader #Dotx5 .Dot3, .Loader #Dotx5 .Dot4 {
-    height: 22px;
-    width: 22px;
-    margin: 2px;
+  .Loader .spinner:before {
+    width: 100px;
+    height: 100px;
   }
 }
 @media screen and (min-width: 992px) {
   .Loader h1 {
     font-size: 500%;
   }
-  .Loader #Dotx5 .Dot, .Loader #Dotx5 .Dot1, .Loader #Dotx5 .Dot2, .Loader #Dotx5 .Dot3, .Loader #Dotx5 .Dot4 {
-    height: 26px;
-    width: 26px;
-    margin: 3px;
+  .Loader .spinner:before {
+    width: 120px;
+    height: 120px;
   }
 }
 header {

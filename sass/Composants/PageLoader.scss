@@ -7,36 +7,17 @@
     inset: 0;
     z-index: 1;
     animation: disappear 3s forwards;
-    h1 {
-        font-size: 200%;
-        @include font-family;
-        animation: color-change 2.5s infinite;
-    }
-    #Dotx5 {
-        .Dot, .Dot1, .Dot2, .Dot3, .Dot4 {
-            height: 15px;
-            width: 15px;
-            border-radius: 50%;
-            display: inline-block;
-            margin: 1px;
-            animation: LoadingSpinner 1.6s ease-in-out infinite;
-        }
-        .Dot {
-            animation-delay: 0s;
-        }
-        .Dot1 {
-            animation-delay: 0.2s;
-        }
-        .Dot2 {
-            animation-delay: 0.4s;
-        }
-        .Dot3 {
-            animation-delay: 0.6s;
-        }
-        .Dot4 {
-            animation-delay: 0.8s;
-        }
-    }
+    .spinner:before {
+        content: '';
+        display: flex;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-top-color: $color-primary;
+        border-bottom-color: $color-secondary;
+        animation: spinner .8s ease infinite;
+      }
 }
 
 
@@ -45,12 +26,9 @@
         h1 {
             font-size: 300%;
         }
-        #Dotx5 {
-            .Dot, .Dot1, .Dot2, .Dot3, .Dot4 {
-                height: 22px;
-                width: 22px;
-                margin: 2px;
-            }
+        .spinner:before {
+            width: 100px;
+            height: 100px;
         }
     }
 }
@@ -60,12 +38,9 @@
         h1 {
             font-size: 500%;
         }
-        #Dotx5 {
-            .Dot, .Dot1, .Dot2, .Dot3, .Dot4 {
-                height: 26px;
-                width: 26px;
-                margin: 3px;
-            }
+        .spinner:before {
+            width: 120px;
+            height: 120px;
         }
     }
 }
