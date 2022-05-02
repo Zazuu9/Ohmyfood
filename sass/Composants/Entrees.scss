@@ -156,6 +156,7 @@ main {
                 margin: auto;
                 margin-top: 50px;
                 box-shadow: 0px 8px 10px -5px $color-grey-icon;
+                transition: 0.3s;
                 &:hover {
                     cursor: pointer;
                     transition: 0.3s;
