@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     margin-left: 5%;
+   
 
     .CaseFonctionnement {
         @include FlexCenterCenter;
@@ -94,7 +95,7 @@
 @media screen and (min-width: $breakpoint-desktop) {
     .Fonctionnement {
         margin-left: -4%;
-        h1 {
+        h2 {
             margin-left: 5%;
         }
         .Case {

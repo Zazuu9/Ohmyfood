@@ -162,7 +162,7 @@ header i {
   background-color: #f6f6f6;
   padding-bottom: 50px;
 }
-.Explore h1 {
+.Explore h2 {
   font-size: x-large;
   padding-top: 20px;
 }
@@ -170,7 +170,7 @@ header i {
   color: #353535;
   margin-top: -5px;
 }
-.Explore h1, .Explore p {
+.Explore h2, .Explore p {
   text-align: center;
   margin-left: 12%;
   margin-right: 12%;
@@ -296,7 +296,7 @@ header i {
   .Fonctionnement {
     margin-left: -4%;
   }
-  .Fonctionnement h1 {
+  .Fonctionnement h2 {
     margin-left: 5%;
   }
   .Fonctionnement .Case {
@@ -322,7 +322,7 @@ header i {
   background-color: #f6f6f6;
   margin-bottom: -16px;
 }
-.Restaurants h1 {
+.Restaurants h2 {
   padding-top: 50px;
   padding-left: 5%;
 }
@@ -371,7 +371,7 @@ header i {
   color: black;
   text-decoration: none;
 }
-.CaseRestaurants .DescRestaurants .TestDesc a h2 {
+.CaseRestaurants .DescRestaurants .TestDesc a h3 {
   font-size: 18px;
   margin-top: 10px;
   margin-bottom: -10px;
@@ -420,7 +420,7 @@ header i {
   }
 }
 @media screen and (min-width: 992px) {
-  .Restaurants h1 {
+  .Restaurants h2 {
     padding: 1%;
   }
   .Restaurants .BlocRestaurants {
@@ -456,7 +456,7 @@ main .Menu {
   margin-left: 5%;
   margin-right: 5%;
 }
-main .Menu h1 {
+main .Menu h2 {
   font-family: "Shrikhand", cursive;
   display: flex;
   justify-content: space-between;
@@ -466,14 +466,11 @@ main .Menu h1 {
   margin-right: 5%;
   padding-top: 40px;
 }
-main .Menu h1 .HeartIcon {
-  padding-right: 20px;
-}
-main .Menu h1 .HeartIcon .fa-regular {
+main .Menu h2 .HeartIcon .fa-regular {
   position: absolute;
   font-size: 35px;
 }
-main .Menu h1 .HeartIcon .fa-solid {
+main .Menu h2 .HeartIcon .fa-solid {
   position: relative;
   font-size: 35px;
   color: transparent;
@@ -483,16 +480,16 @@ main .Menu h1 .HeartIcon .fa-solid {
   opacity: 0;
   transition: all 200ms ease-in-out;
 }
-main .Menu h1 .HeartIcon .fa-solid:hover {
+main .Menu h2 .HeartIcon .fa-solid:hover {
   cursor: pointer;
   opacity: 1;
   transform: scale(1.1);
 }
 main .Menu .Card .ENTREES h2, main .Menu .Card .PLATS h2, main .Menu .Card .DESSERTS h2 {
-  font-size: 18px;
-  font-weight: normal;
+  font-size: 16px;
   position: relative;
   padding-bottom: 10px;
+  font-family: "Roboto", sans-serif;
 }
 main .Menu .Card .ENTREES h2:after, main .Menu .Card .PLATS h2:after, main .Menu .Card .DESSERTS h2:after {
   content: "";
@@ -659,7 +656,7 @@ main .Menu .Btn-Commander h3:hover {
   main .Menu {
     margin: 0;
   }
-  main .Menu h1 {
+  main .Menu h2 {
     margin-left: 2%;
   }
   main .Menu .Card {

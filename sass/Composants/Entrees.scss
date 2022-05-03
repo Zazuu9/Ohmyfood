@@ -17,15 +17,14 @@ main {
     .Menu {
         margin-left: 5%;
         margin-right: 5%;
-        h1 {
-            @include font-family;
+        h2 {
+            @include font-familyShrikhand;
             @include FlexSpaceBetweenCenter;
             font-size: 28px;
             font-weight: normal;
             margin-right: 5%;
             padding-top: 40px;
             .HeartIcon {
-                padding-right: 20px;
                 .fa-regular {
                     position: absolute;
                     font-size: 35px;
@@ -51,10 +50,10 @@ main {
         .Card {
             .ENTREES, .PLATS, .DESSERTS {
                 h2 {
-                    font-size: 18px;
-                    font-weight: normal;
+                    font-size: 16px;
                     position: relative;
                     padding-bottom: 10px;
+                    @include font-familyRoboto;
                     &:after {
                         content: "";
                         width: 50px;
@@ -212,7 +211,7 @@ main {
         }
         .Menu {
             margin: 0;
-            h1 {
+            h2 {
                 margin-left: 2%;
             }
             .Card {

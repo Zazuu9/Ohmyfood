@@ -53,9 +53,14 @@
 	flex-wrap: nowrap;
 }
 
-@mixin font-family {
+@mixin font-familyShrikhand {
     font-family: 'Shrikhand', cursive;
 }
+
+@mixin font-familyRoboto {
+    font-family: 'Roboto', sans-serif;
+}
+
 
 $breakpoint-tablet: 768px;
 $breakpoint-desktop: 992px;

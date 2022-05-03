@@ -5,7 +5,7 @@ header {
     height: 50px;
     box-shadow: 0px 2px 10px -5px $color-grey-text;
     h1 {
-        @include font-family;
+        @include font-familyShrikhand;
         font-size: 30px;
     }
     i {
