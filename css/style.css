@@ -506,11 +506,41 @@ main .Menu .Card .ENTREES h2:after, main .Menu .Card .PLATS h2:after, main .Menu
 main .Menu .Card .ENTREES {
   animation: ApparitionMenu 0.5s ease 0.5s 1 normal both;
 }
-main .Menu .Card .PLATS {
+main .Menu .Card .ENTREES .Plat1 {
+  animation: ApparitionMenu 0.5s ease 0.8s 1 normal both;
+}
+main .Menu .Card .ENTREES .Plat2 {
   animation: ApparitionMenu 0.5s ease 1s 1 normal both;
 }
+main .Menu .Card .ENTREES .Plat3 {
+  animation: ApparitionMenu 0.5s ease 1.2s 1 normal both;
+}
+main .Menu .Card .ENTREES .Plat4 {
+  animation: ApparitionMenu 0.5s ease 1.4s 1 normal both;
+}
+main .Menu .Card .PLATS {
+  animation: ApparitionMenu 0.5s ease 1.6s 1 normal both;
+}
+main .Menu .Card .PLATS .Plat10 {
+  animation: ApparitionMenu 0.5s ease 1.9s 1 normal both;
+}
+main .Menu .Card .PLATS .Plat11 {
+  animation: ApparitionMenu 0.5s ease 2.1s 1 normal both;
+}
+main .Menu .Card .PLATS .Plat12 {
+  animation: ApparitionMenu 0.5s ease 2.3s 1 normal both;
+}
 main .Menu .Card .DESSERTS {
-  animation: ApparitionMenu 0.5s ease 1.5s 1 normal both;
+  animation: ApparitionMenu 0.5s ease 2.5s 1 normal both;
+}
+main .Menu .Card .DESSERTS .Plat20 {
+  animation: ApparitionMenu 0.5s ease 2.8s 1 normal both;
+}
+main .Menu .Card .DESSERTS .Plat21 {
+  animation: ApparitionMenu 0.5s ease 3s 1 normal both;
+}
+main .Menu .Card .DESSERTS .Plat22 {
+  animation: ApparitionMenu 0.5s ease 3.2s 1 normal both;
 }
 main .Menu .Card .Plat {
   display: flex;

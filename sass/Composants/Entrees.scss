@@ -68,12 +68,22 @@ main {
             }
             .ENTREES {
                 animation: ApparitionMenu 0.5s ease 0.5s 1 normal both;
+                .Plat1 { animation: ApparitionMenu 0.5s ease 0.8s 1 normal both; } 
+                .Plat2 { animation: ApparitionMenu 0.5s ease 1s 1 normal both; } 
+                .Plat3 { animation: ApparitionMenu 0.5s ease 1.2s 1 normal both; } 
+                .Plat4 { animation: ApparitionMenu 0.5s ease 1.4s 1 normal both; } 
             }
             .PLATS {
-                animation: ApparitionMenu 0.5s ease 1s 1 normal both;
+                animation: ApparitionMenu 0.5s ease 1.6s 1 normal both;
+                .Plat10 { animation: ApparitionMenu 0.5s ease 1.9s 1 normal both; } 
+                .Plat11 { animation: ApparitionMenu 0.5s ease 2.1s 1 normal both; } 
+                .Plat12 { animation: ApparitionMenu 0.5s ease 2.3s 1 normal both; }
             }
             .DESSERTS {
-                animation: ApparitionMenu 0.5s ease 1.5s 1 normal both;
+                animation: ApparitionMenu 0.5s ease 2.5s 1 normal both;
+                .Plat20 { animation: ApparitionMenu 0.5s ease 2.8s 1 normal both; } 
+                .Plat21 { animation: ApparitionMenu 0.5s ease 3s 1 normal both; } 
+                .Plat22 { animation: ApparitionMenu 0.5s ease 3.2s 1 normal both; }
             }
             .Plat {
                 @include FlexSpaceBetweenCenter;
