@@ -666,25 +666,58 @@ main .Menu .Btn-Commander h3:hover {
     display: flex;
   }
   main .Menu .Card .ENTREES {
+    animation: ApparitionMenu 0.5s ease 0.5s 1 normal both;
     display: flex;
     flex-direction: column;
     width: 35%;
+  }
+  main .Menu .Card .ENTREES .Plat1 {
+    animation: ApparitionMenu 0.5s ease 1.2s 1 normal both;
+  }
+  main .Menu .Card .ENTREES .Plat2 {
+    animation: ApparitionMenu 0.5s ease 1.9s 1 normal both;
+  }
+  main .Menu .Card .ENTREES .Plat3 {
+    animation: ApparitionMenu 0.5s ease 2.6s 1 normal both;
+  }
+  main .Menu .Card .ENTREES .Plat4 {
+    animation: ApparitionMenu 0.5s ease 3.3s 1 normal both;
   }
   main .Menu .Card .ENTREES h2 {
     margin-left: 5%;
   }
   main .Menu .Card .PLATS {
+    animation: ApparitionMenu 0.5s ease 0.7s 1 normal both;
     display: flex;
     flex-direction: column;
     width: 35%;
+  }
+  main .Menu .Card .PLATS .Plat10 {
+    animation: ApparitionMenu 0.5s ease 1.4s 1 normal both;
+  }
+  main .Menu .Card .PLATS .Plat11 {
+    animation: ApparitionMenu 0.5s ease 2.1s 1 normal both;
+  }
+  main .Menu .Card .PLATS .Plat12 {
+    animation: ApparitionMenu 0.5s ease 2.8s 1 normal both;
   }
   main .Menu .Card .PLATS h2 {
     margin-left: 5%;
   }
   main .Menu .Card .DESSERTS {
+    animation: ApparitionMenu 0.5s ease 0.9s 1 normal both;
     display: flex;
     flex-direction: column;
     width: 35%;
+  }
+  main .Menu .Card .DESSERTS .Plat20 {
+    animation: ApparitionMenu 0.5s ease 1.6s 1 normal both;
+  }
+  main .Menu .Card .DESSERTS .Plat21 {
+    animation: ApparitionMenu 0.5s ease 2.3s 1 normal both;
+  }
+  main .Menu .Card .DESSERTS .Plat22 {
+    animation: ApparitionMenu 0.5s ease 3s 1 normal both;
   }
   main .Menu .Card .DESSERTS h2 {
     margin-left: 5%;
