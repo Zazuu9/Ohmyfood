@@ -380,6 +380,7 @@ header i {
   text-decoration: underline;
 }
 .CaseRestaurants .DescRestaurants .HeartIcon {
+  margin-top: -10px;
   padding-right: 20px;
 }
 .CaseRestaurants .DescRestaurants .HeartIcon .fa-regular {
@@ -465,6 +466,9 @@ main .Menu h2 {
   font-weight: normal;
   margin-right: 5%;
   padding-top: 40px;
+}
+main .Menu h2 .HeartIcon {
+  margin-top: -10px;
 }
 main .Menu h2 .HeartIcon .fa-regular {
   position: absolute;
