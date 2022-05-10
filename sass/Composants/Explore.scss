@@ -25,13 +25,14 @@
         color: white;
         background: linear-gradient(to top left, $color-primary, $color-secondary);
         margin: auto;
-        box-shadow: 0px 8px 10px -5px $color-grey-icon;
+        box-shadow: 0px 8px 10px -5px $color-primary;
         transition: 0.3s;
         &:hover {
             cursor: pointer;
             transition: 0.3s;
+            transform: scale(1.01);
             filter: brightness(105%);
-            box-shadow: 0px 12px 10px -5px $color-grey-icon;
+            box-shadow: 0px 12px 20px -5px $color-primary;
         }
     }
 }

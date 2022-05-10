@@ -185,14 +185,15 @@ header i {
   color: white;
   background: linear-gradient(to top left, #9356DC, #FF79DA);
   margin: auto;
-  box-shadow: 0px 8px 10px -5px #7e7e7e;
+  box-shadow: 0px 8px 10px -5px #9356DC;
   transition: 0.3s;
 }
 .Explore .Btn-Explore:hover {
   cursor: pointer;
   transition: 0.3s;
+  transform: scale(1.01);
   filter: brightness(105%);
-  box-shadow: 0px 12px 10px -5px #7e7e7e;
+  box-shadow: 0px 12px 20px -5px #9356DC;
 }
 
 .Fonctionnement {
@@ -626,14 +627,15 @@ main .Menu .Btn-Commander h3 {
   background: linear-gradient(to top left, #9356DC, #FF79DA);
   margin: auto;
   margin-top: 50px;
-  box-shadow: 0px 8px 10px -5px #7e7e7e;
+  box-shadow: 0px 8px 10px -5px #9356DC;
   transition: 0.3s;
 }
 main .Menu .Btn-Commander h3:hover {
   cursor: pointer;
   transition: 0.3s;
+  transform: scale(1.01);
   filter: brightness(105%);
-  box-shadow: 0px 12px 10px -5px #7e7e7e;
+  box-shadow: 0px 12px 20px -5px #9356DC;
 }
 
 @media screen and (min-width: 768px) {
