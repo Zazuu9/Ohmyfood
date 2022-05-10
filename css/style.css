@@ -406,6 +406,7 @@ header i {
 .CaseRestaurants:hover {
   transform: scale(1.015);
   transition: 0.2s;
+  box-shadow: 0px 12px 30px -5px #7e7e7e;
 }
 
 @media screen and (min-width: 768px) {
