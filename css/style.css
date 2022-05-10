@@ -38,6 +38,16 @@
     transform: translateX(0);
   }
 }
+@keyframes SlideoutPrice {
+  0% {
+    opacity: 1;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 @keyframes ApparitionMenu {
   0% {
     opacity: 0;
@@ -583,6 +593,7 @@ main .Menu .Card .Plat .Prix {
   font-size: 15px;
   font-weight: bold;
   padding-top: 25px;
+  animation: SlideoutPrice 0.4s ease 0s 1 normal forwards;
 }
 main .Menu .Card .Plat .Check {
   display: flex;
