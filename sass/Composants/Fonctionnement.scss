@@ -16,7 +16,7 @@
             .TexteCase {
                 @include FlexFlexStartBaseline;
                 width: 100%;
-                    h2 {
+                    p {
                         font-size: 18px;
                         margin-left: -10px;
                         text-align: center;
@@ -48,7 +48,7 @@
             .TexteCase1 {
                 @include FlexFlexStartBaseline;
                 width: 100%;
-                    h2 {
+                    p {
                         font-size: 18px;
                         margin-left: -10px;
                         text-align: center;
