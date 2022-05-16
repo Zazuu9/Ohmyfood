@@ -607,19 +607,20 @@ main .Menu .Card .Plat .Check {
   animation: SlideoutCheck 0.4s ease 0s 1 normal forwards;
 }
 main .Menu .Card .Plat:hover .Titre h3 {
-  width: 110%;
+  width: 95%;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
 main .Menu .Card .Plat:hover .Titre p {
-  width: 110%;
+  width: 95%;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
 main .Menu .Card .Plat:hover .Prix {
-  margin-right: -10%;
+  margin-right: 0%;
+  margin-left: -5%;
   animation: SlideinPrice 0.5s ease 0s 1 normal forwards;
 }
 main .Menu .Card .Plat:hover .Check {

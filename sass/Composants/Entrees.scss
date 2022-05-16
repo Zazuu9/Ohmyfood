@@ -133,20 +133,21 @@ main {
                 &:hover {
                     .Titre {
                         h3 {
-                            width: 110%;
+                            width: 95%;
                             text-overflow: ellipsis;
                             overflow: hidden;
                             white-space: nowrap;
                         }
                         p {
-                            width: 110%;
+                            width: 95%;
                             text-overflow: ellipsis;
                             overflow: hidden;
                             white-space: nowrap;
                         }
                     }
                     .Prix {
-                        margin-right: -10%;
+                        margin-right: 0%;
+                        margin-left: -5%;
                         animation: SlideinPrice 0.5s ease 0s 1 normal forwards;
                     }
                     .Check {
